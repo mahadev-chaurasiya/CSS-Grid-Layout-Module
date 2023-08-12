@@ -1,0 +1,92 @@
+body, html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 50px;
+    grid-template-columns: 12% auto;
+    grid-template-areas:  
+    "sidebar right"
+    "footer footer";
+}
+ul{
+    list-style-type: none;
+    float: right;
+}
+a{
+    text-decoration: none;
+}
+ul li a{
+    color: white;
+    padding: 10px;
+}
+ul li{
+    display: inline;
+}
+
+#logo{
+    padding: 15px;
+    margin-left: 15px;
+    background-color: beige;
+    color: violet;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    /* grid-column-start: logo-start;
+    grid-column-end: span nav-end; */
+}
+header{
+    background-color:thistle;
+    display: grid;
+    /* grid-template-columns: 20% 80%; */
+    /* grid-template-columns: 20% auto;  */
+    /* grid-template-columns: repeat(2, auto); */
+    grid-template-columns: ;
+    grid-template-columns: [logo-start] fit-content(20%) [nav-start] auto [nav-end];
+}
+
+section#wiki{
+    background-color:thistle;
+    padding: 2em;
+    border-top: 5px solid wheat;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+#content h1{
+    text-transform: uppercase;
+    color: #FFFBC5;
+}
+
+#content p{
+    color: white;
+}
+
+img{
+    max-width: 100%;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+#imgWiki{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background: lightslategrey;
+    color: #FFFBC5;
+    padding: 1em;
+}
+.main{
+    grid-area: right;
+    grid-template-rows: 51px fit-content(30%);
+}
+footer{
+    grid-area: footer;
+    background: thistle;
+}
+

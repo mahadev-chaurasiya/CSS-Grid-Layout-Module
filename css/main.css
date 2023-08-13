@@ -84,7 +84,13 @@ img {
 }
 .main {
   grid-area: right;
-  grid-template-rows: 51px fit-content(30%) 40%;
+  grid-template-rows: 51px fi t-content(30%) 40%;
+  /* grid-template-columns: 400px; */
+  /* grid-template-columns: 200px 200px; */
+  /* justify-content: space-between;  */
+  /* justify-content: space-around; */
+
+  display: grid;
 }
 footer {
   grid-area: footer;
@@ -138,6 +144,20 @@ ul#branches li:nth-child(4){
 }
 ul#branches li:nth-child(5){
     background-color: blanchedalmond;
+}
+
+section#doYou{
+    background-color: #F2F2F2;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: space-around;
+}
+
+#imgRox{
+    width: 200px;
+    height: 200px;
+    align-self: center;
 }
 
 

@@ -90,3 +90,27 @@ footer {
   grid-area: footer;
   background: thistle;
 }
+
+#branches{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    text-align: center;
+    /* grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(2,auto);
+    grid-gap: 10px 30px; */
+}
+#branches i{
+    font-size: 2em;
+}
+ul#branches{
+    margin: 0;
+    padding: 0;
+}
+ul#branches li{
+    background-color: azure;
+    padding: 1em;
+}
+ul#branches li p{
+    color: gray;
+}
+

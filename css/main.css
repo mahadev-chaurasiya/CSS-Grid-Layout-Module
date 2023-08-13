@@ -93,11 +93,12 @@ footer {
 
 #branches{
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(3, auto);
     text-align: center;
     /* grid-template-columns: repeat(2,auto);
     grid-template-rows: repeat(2,auto);
     grid-gap: 10px 30px; */
+    /* justify-items: center; */
 }
 #branches i{
     font-size: 2em;
@@ -107,10 +108,15 @@ ul#branches{
     padding: 0;
 }
 ul#branches li{
-    background-color: azure;
+    background-color: green;
     padding: 1em;
+    width: 60%;
 }
 ul#branches li p{
-    color: gray;
+    color: white;
 }
+ul#branches li:nth-child(3){
+    justify-self: end;
+}
+
 
